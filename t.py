@@ -1,5 +1,6 @@
 from telethon import TelegramClient
 import time
+from telethon.sessions import StringSession
 from config import (API_ID, API_HASH, SESSION_STRING)
 
 #loop = asyncio.get_event_loop()
