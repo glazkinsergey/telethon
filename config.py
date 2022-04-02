@@ -4,5 +4,5 @@ from dotenv import load_dotenv
 # Загрузка значений переменных окружения
 load_dotenv()
 
-API_ID = environ.get('API_ID')
-API_HASH = environ.get('API_HASH')
+API_ID = environ.get('api_id')
+API_HASH = environ.get('api_hash')
