@@ -1,7 +1,7 @@
 from telethon import TelegramClient
 import time
 from telethon.sessions import StringSession
-from config import (API_ID, API_HASH, SESSION_STRING)
+from config import (API_ID, API_HASH, SESSION_STRING, CHAT_ID)
 
 #loop = asyncio.get_event_loop()
 
@@ -10,9 +10,9 @@ nnn = 1
 
 async def main():
     iii = 1000
-    async for message in client.iter_messages('dprpetrovka'):
+    async for message in client.iter_messages('CHAT_ID'):
         if 'MessageActionChatAddUser' in str(message.action):
-        	await client.delete_messages('dprpetrovka', message.id)
+        	await client.delete_messages('CHAT_ID', message.id)
         iii -= 1
         if iii == 0:
         	break
