@@ -1,11 +1,10 @@
 from telethon import TelegramClient
 import time
+from config import (API_ID, API_HASH, SESSION_STRING)
 
 #loop = asyncio.get_event_loop()
 
-api_id = 441946
-api_hash = '927ac3db15d4f533830abd64efabe261'
-client = TelegramClient('anon', api_id, api_hash)
+client = TelegramClient(StringSession(SESSION_STRING), API_ID, API_HASH)
 nnn = 1
 
 async def main():
