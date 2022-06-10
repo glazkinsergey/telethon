@@ -1,13 +1,13 @@
 from telethon import TelegramClient
 import time
-from telethon.sessions import StringSession
+#from telethon.sessions import StringSession
 from config import (API_ID, API_HASH, SESSION_STRING, CHAT_ID)
 
 #loop = asyncio.get_event_loop()
-if SESSION_STRING:
-    client = TelegramClient(StringSession(SESSION_STRING), API_ID, API_HASH)
-else:
-    client = TelegramClient('anon', API_ID, API_HASH)
+#if SESSION_STRING:
+    #client = TelegramClient(StringSession(SESSION_STRING), API_ID, API_HASH)
+#else:
+client = TelegramClient('don', API_ID, API_HASH)
 nnn = 1
 
 async def main():
